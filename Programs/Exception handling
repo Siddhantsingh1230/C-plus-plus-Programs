@@ -1,0 +1,47 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+
+{
+
+	int a,b,c;	cout<<"Enter A:";
+
+	cin>>a;
+
+	cout<<"Enter B:";
+
+	cin>>b;
+
+	try
+
+	{
+
+		if (b !=0)
+
+		{
+
+			c=a/b;
+
+		}
+
+		else
+
+			throw 1;
+
+	}
+
+	catch(int s)
+
+	{
+
+		cout<<"divisor Can't be Zero"<<endl;
+
+	}
+
+	cout<<"divison\n"<<c;
+
+	return 0;
+
+}
